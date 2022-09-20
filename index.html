@@ -12,18 +12,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-    <div id="beker">
-            <label>Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
-            <input type="number" id="mag">
-            <label>cm</label><br>
-            <label>Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
-            <input type="number" id="sul">
-            <label>kg</label><br>
+<div class="container">
+    <div id="beker" class="row">
+        <div class="col-md-8 col-lg-8 col-xl-8">
+            <br>
+            <p>Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</p>
+            <p>Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4">
+            <br>
+            <input type="number" id="mag">cm <br><br>
+            <input type="number" id="sul">kg
+        </div>
+        <div>
             <button id="szamitas">Számítás</button>
+        </div>         
     </div>
     <div>
-        <p class="h2" >Az ÖN BMI ÉRTÉKE:<span id="BMIout"></span></p>
+        <p class="cimsor">Az ÖN BMI ÉRTÉKE: <span id="BMIout"></span></p>
         <table class="table">
             <tr>
                 <th class="balt">
@@ -76,7 +82,17 @@
         </table>
     </div>
     <div>   
-        <p class="cimsor">AZ IDEÁLIS TESTTÖMEGE:</p>
+        <p class="cimsor">AZ IDEÁLIS TESTTÖMEGE: <span id="IdeaOut"></span> kg</p><br>
+        <table class="table">
+            <tr>
+                <th class="balt">
+                    <p class="cimsor"><span id="min"></span> - <span id="max"></span> kg</p>
+                </th>
+                <th class="jobbt">
+                    <p>Kívánatos szélső értékek</p>
+                </th>
+            </tr>
+        </table>        
     </div>
 </div>
 </body>    
