@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oraimunka</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <label for="fname">Magasság Centibe:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Testsúly Kilóba:</label><br>
-        <input type="text" id="lname" name="lname">
-        <input type="submit" value="Submit">
-      </form>
+    <div id="beker">
+        <form>
+            <label for="fname">Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
+            <input type="text" id="fname" name="fname">
+            <label for="fname">cm</label><br>
+            <label for="lname">Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
+            <input type="text" id="lname" name="lname">
+            <label for="fname">kg</label><br>
+            <button type="submit" id="submit">Számítás</button>
+        </form>
+    </div>
+    <div>
+        <h1>Az ÖN BMI ÉRTÉKE:</h1>
+    </div>
+    <div>   
+        <h1>AZ IDEÁLIS TESTTÖMEGE:</h1>
+    </div>
 </body>
 </html>
