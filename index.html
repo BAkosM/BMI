@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oraimunka</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <div>
     <div id="beker">
-        <form>
-            <label for="cm">Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
-            <input type="number" name="cm">
-            <label for="cm">cm</label><br>
-            <label for="kg">Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
-            <input type="number" name="kg">
-            <label for="kg">kg</label><br>
-            <button type="submit">Számítás</button>
-        </form>
+            <label>Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
+            <input type="number" id="mag">
+            <label>cm</label><br>
+            <label>Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
+            <input type="number" id="sul">
+            <label>kg</label><br>
+            <button id="szamitas">Számítás</button>
     </div>
     <div>
-        <p class="cimsor font-weight-bold">Az ÖN BMI ÉRTÉKE:</p>
+        <p class="h2" >Az ÖN BMI ÉRTÉKE:<span id="BMIout"></span></p>
         <table class="table">
             <tr>
                 <th class="balt">
@@ -80,5 +80,4 @@
     </div>
 </div>
 </body>    
-<link rel="script" href="index.js">
 </html>
