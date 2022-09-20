@@ -1,4 +1,4 @@
-# [Név]
+# [Benedek Akos Marcell]
 
 ## Hogyan kezdj neki?
 
