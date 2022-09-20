@@ -5,25 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oraimunka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+<div>
     <div id="beker">
         <form>
-            <label for="fname">Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
-            <input type="text" id="fname" name="fname">
-            <label for="fname">cm</label><br>
-            <label for="lname">Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
-            <input type="text" id="lname" name="lname">
-            <label for="fname">kg</label><br>
-            <button type="submit" id="submit">Számítás</button>
+            <label for="cm">Írja be cm-ben számított testmagasságát (cipő nélkül mérve):</label>
+            <input type="number" name="cm">
+            <label for="cm">cm</label><br>
+            <label for="kg">Írja be kg-ban számított testsúlyát (cipő nélkül mérve):</label>
+            <input type="number" name="kg">
+            <label for="kg">kg</label><br>
+            <button type="submit">Számítás</button>
         </form>
     </div>
     <div>
-        <h1>Az ÖN BMI ÉRTÉKE:</h1>
+        <p class="cimsor font-weight-bold">Az ÖN BMI ÉRTÉKE:</p>
+        <table class="table">
+            <tr>
+                <th class="balt">
+                    <p>18,5 vagy kevesebb</p>
+                </th>
+                <th>
+                    <p>SOVÁNY</p>
+                </th>
+            </tr>
+            <tr>
+                <th class="balt">
+                    <p>18,5-24,9</p>
+                </th>
+                <th class="jobbt">
+                    <p>NORMÁL</p>
+                </th>
+            </tr>
+            <tr>
+                <th class="balt">
+                    <p>25-29,9</p>
+                </th>
+                <th class="jobbt">
+                    <p>TÚLSÚLY</p>
+                </th>
+            </tr>
+            <tr>
+                <th class="balt">
+                    <p>30-34,9</p>
+                </th>
+                <th class="jobbt">
+                    <p>I.FOKÚ ELHÍZÁS</p>
+                </th>
+            </tr>
+            <tr>
+                <th class="balt">
+                    <p>35-39,9</p>
+                </th>
+                <th class="jobbt">
+                    <p>II.FOKÚ ELHÍZÁS</p>
+                </th>
+            </tr>
+            <tr>
+                <th class="balt">
+                    <p>40 vagy több</p>
+                </th>
+                <th class="jobbt">
+                    <p>III.FOKÚ ELHÍZÁS</p>
+                </th>
+            </tr>
+        </table>
     </div>
     <div>   
-        <h1>AZ IDEÁLIS TESTTÖMEGE:</h1>
+        <p class="cimsor">AZ IDEÁLIS TESTTÖMEGE:</p>
     </div>
-</body>
+</div>
+</body>    
+<link rel="script" href="index.js">
 </html>
